@@ -59,13 +59,11 @@ void setup() {
   // End of trinket special code
 
   pixels.begin(); // This initializes the NeoPixel library.
+  pixels.setBrightness(BRIGHTNESS); // Set the brightness
 
   // GPIO pins 2 and 4 for analogRead from Naza
   pinMode(2, INPUT);  // Naza Green LED
   pinMode(4, INPUT);  // Naza Red LED
-
-  // Set the brightness
-  pixels.setBrightness(BRIGHTNESS);
 }
 
 /**
